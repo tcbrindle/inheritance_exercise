@@ -17,8 +17,12 @@ private:
     std::string filename_;
 };
 
-class PortraitPicture {
+class PortraitPicture : public Picture {
+public:
     explicit PortraitPicture(std::string filename);
+
+    void display_in_portrait() const;
 };
+
 
 #endif

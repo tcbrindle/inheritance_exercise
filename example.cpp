@@ -17,3 +17,13 @@ const std::string& Picture::get_filename() const
 {
     return filename_;
 }
+
+PortraitPicture::PortraitPicture(std::string filename)
+    : Picture(filename)
+{}
+
+
+void PortraitPicture::display_in_portrait() const
+{
+    std::cout << "Displaying " << get_filename() << "in portrait\n";
+}
